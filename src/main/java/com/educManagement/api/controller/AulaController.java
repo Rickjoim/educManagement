@@ -65,9 +65,11 @@ public class AulaController {
 
     @PutMapping
     @Transactional
-    public void atualizarAula(@RequestBody DadosAtualizacaoAula dados) {
+    public DadosAtualizacaoAula atualizarAula(@RequestBody DadosAtualizacaoAula dados) {
         var aula = aulaRepository.getReferenceById(dados.id());
         aula.atualizarInformacoes(dados);
+
+        return new DadosAtualizacaoAula(dados.id(), dados.data(), dados.observacao(),dados.endereco());
     }
 
 
