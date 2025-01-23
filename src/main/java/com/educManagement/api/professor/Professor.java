@@ -32,8 +32,7 @@ public class Professor {
     @Embedded
     private Endereco endereco;
 
-    public Professor() {
-    }
+
 
     public Professor(DadosCadastroProfessor dados) {
         this.nome = dados.nome();

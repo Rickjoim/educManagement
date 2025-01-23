@@ -27,8 +27,6 @@ public class Aluno {
     @Embedded
     private Endereco endereco;
 
-    public Aluno() {
-    }
 
 
     public Aluno(DadosCadastroAluno dados) {

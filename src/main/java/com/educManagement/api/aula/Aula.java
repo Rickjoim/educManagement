@@ -40,7 +40,6 @@ public class Aula {
     @JoinColumn(name = "aluno_id", nullable = false)
     private Aluno aluno;
 
-    public Aula(){}
     public Aula(DadosCadastroAula dados, Professor professor, Aluno aluno) {
         this.ativo = true;
         this.data = dados.data();

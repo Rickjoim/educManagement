@@ -38,9 +38,6 @@ public class Endereco {
     @Pattern(regexp = "[A-Z]{2}", message = "UF deve conter exatamente 2 letras maiúsculas.")
     private String uf;
 
-    public Endereco() {
-
-    }
 
     // Método para definir dados após criação da entidade
     public void setDados(String logradouro, String bairro, String cep, String numero, String complemento, String cidade, String uf) {
